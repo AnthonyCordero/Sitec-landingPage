@@ -1,0 +1,28 @@
+.sitec-producto-hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slogan-producto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1200px;
+    padding-top: 6rem;
+
+}
+.title{
+    color: #2e57a6;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.1rem;
+    text-shadow: -1px 2px 4px #2e57a6;
+}
+.descrption{
+    color: #2e57a6;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    text-shadow: -1px 2px 4px #2e57a6;
+}

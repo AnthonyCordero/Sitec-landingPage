@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitec Software</title>
+
+        <!-- Icon link -->
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+        <!-- Icon link -->
+
+        <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <!-- Bootstrap CSS -->
+
+        <!-- CSS link-->
+    <link rel="stylesheet" href="css/main.css">
+        <!-- CSS link-->
+
+        <!-- Font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Poppins:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
+        <!-- Font link-->
+</head>
+
+<body>
+    <header>
+        <nav class="sitec-nav-bar navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img class="sitec-ico" src="assets/icons/favicon.ico" alt="Sitec Logo"></a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                        <div id="dropdown" class="dropdown">
+                            <button onclick="toggleDropdown()" id="dropbtn" class="dropbtn sitec-nav-item">Servicios</button>
+                            <div id="sitec-drop-down" class="dropdown-content">
+                                <a href="#">Asadas</a>
+                                <a href="#">Infraestructura y ciberseguridad</a>
+                                <a href="#">Anti Lavado de Dinero || AML</a>
+                                <a href="#">Sitec Crédito</a>
+                                <a href="#">Planificación de recursos empresariales || ERP</a>
+                            </div>
+                        </div>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="sitec-nav-item" href="#">Sobre Nosotros</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="sitec-hero">
+                <div class="row">
+                    <div class="col-12">
+                        <img src="assets/images/isologo-sitec.svg" alt="Sitec Software">
+                        <h1>Soluciones de Automatización y Software</h1>
+                    </div>
+                </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="sitec-servicios-slider">
+            <h2 class="sitec-services-title">Soluciones</h2>
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner size">
+                    <div class="carousel-item active size">
+                        <img src="assets/images/asadas-m.webp" class="d-block w-100" alt="Servicio de Asadas">
+                        <div class="sitec-carrousel-asada-caption carousel-caption d-flex flex-column text-start">
+                            <h2 class="sitec-asada-service-caption-header">Servicio de Asadas</h2>
+                            <p class="sitec-asada-service-caption-text">Automatización y gestión contable todo-en-uno para asadas. ¡Simplifica tus operaciones y maximiza tu eficiencia!</p>
+                            <a href="asada.html" class="asada-button" type="button">AUTOMATIZA</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item size">
+                        <img src="assets/images/ciberseguridad-m.webp" class="d-block w-100" alt="Servicio de Infraestructura y Ciberseguridad">
+                        <div class="sitec-carrousel-infra-secure-caption carousel-caption d-flex flex-column text-end justify-content-end">
+                            <h2 class="sitec-infra-secure-service-caption-header">Infraestructura y Ciberseguridad</h2>
+                            <p class="sitec-infra-secure-service-caption-text">Mantenimiento experto y seguridad de nivel empresarial para tu red. ¡Tu información está segura con nosotros!</p>
+                            <div class="d-flex justify-content-end"><button class="credit-button" type="button">PROTEGE</button></div>
+                        </div>
+                    </div>
+                    <div class="carousel-item size">
+                        <img src="assets/images/aml-m.webp" class="d-block w-100" alt="...">
+                        <div class="sitec-carrousel-aml-caption carousel-caption d-flex flex-column text-start">
+                            <h2 class="sitec-aml-service-caption-header">Anti Lavado de Dinero AML</h2>
+                            <p class="sitec-aml-service-caption-text">Protege tu negocio con nuestra solución de monitoreo AML. Detecta y previene actividades sospechosas de manera eficaz.</p>
+                            <button class="asada-button" type="button">MÁS INFORMACIÓN</button>
+                        </div>
+                    </div>
+                        <div class="carousel-item size">
+                            <img src="assets/images/erp-m.webp" class="d-block w-100" alt="...">
+                            <div class="sitec-carrousel-erp-caption carousel-caption d-flex flex-column text-start">
+                                <h2 class="sitec-erp-service-caption-header">Sistema de Gestión Empresarial ERP</h2>
+                                <p class="sitec-erp-service-caption-text">Potencia tu negocio con nuestro sistema integral <br> de gestión empresarial. ¡Control total sobre tus <br> operaciones para un crecimiento óptimo!</p>
+                                <button class="asada-button" type="button">CONOCE MÁS</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item size">
+                            <img src="assets/images/credito-m.webp" class="d-block w-100" alt="...">
+                            <div class="sitec-carrousel-credit-caption carousel-caption d-flex flex-column text-start">
+                                <h2 class="sitec-credit-service-caption-header">Sitec Crédito</h2>
+                                <p class="sitec-credit-service-caption-text">Gestiona tus préstamos de manera inteligente. <br> ¡Maximiza tu rendimiento financiero con nuestras herramientas avanzadas!</p>
+                                <button class="credit-button" type="button">¡DESCUBRE</button>
+                            </div>
+                        </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="sitec-carrousell-controller carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="sitec-carrousell-controller carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer>
+
+    </footer>
+
+
+        <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <!-- Bootstrap js -->
+        <!-- js link -->
+    <script src="js/main.js"></script>
+        <!-- js link -->
+</body>
+
+</html>
