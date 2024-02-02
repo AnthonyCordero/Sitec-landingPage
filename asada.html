@@ -26,70 +26,104 @@
     <!-- Font link-->
 </head>
 <body>
-        <header>
-            <nav class="sitec-nav-bar navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <a class="navbar-brand" href="#"><img class="sitec-ico" src="assets/icons/favicon.ico" alt="Sitec Logo"></a>
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                        <div id="dropdown" class="dropdown">
-                            <button onclick="toggleDropdown()" id="dropbtn" class="dropbtn sitec-nav-item">Servicios</button>
-                            <div id="sitec-drop-down" class="dropdown-content">
-                                <a href="#">Asadas</a>
-                                <a href="#">Infraestructura y ciberseguridad</a>
-                                <a href="#">Anti Lavado de Dinero || AML</a>
-                                <a href="#">Sitec Crédito</a>
-                                <a href="#">Planificación de recursos empresariales || ERP</a>
-                            </div>
+    <header>
+        <nav class="sitec-nav-bar navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <h1><a class="navbar-brand navbar-logo" href="/index.html"><img class="sitec-ico" src="assets/images/isologo-sitec.svg" alt="Sitec Software">Software</a></h1>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <div id="dropdown" class="dropdown">
+                        <button onclick="toggleDropdown()" id="dropbtn" class="dropbtn sitec-nav-item">Servicios</button>
+                        <div id="sitec-drop-down" class="dropdown-content">
+                            <a href="#">Asadas</a>
+                            <a href="#">Infraestructura y ciberseguridad</a>
+                            <a href="#">Anti Lavado de Dinero || AML</a>
+                            <a href="#">Sitec Crédito</a>
+                            <a href="#">Planificación de recursos empresariales || ERP</a>
                         </div>
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="sitec-nav-item" href="#">Sobre Nosotros</a></li>
-                        </ul>
                     </div>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="sitec-nav-item" href="#">Sobre Nosotros</a></li>
+                    </ul>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
+    </header>
             <main>
                 <section class="sitec-producto-hero">
                     <article class="slogan-producto">
-                        <h1 class="title"><strong>Maximiza el control y la eficiencia de tu Asada.</strong></h1>
+                        <h2 class="title">Maximiza el control y la eficiencia de tu<strong> Asada.</strong></h2>
                         <p class="descrption">Simplifica la gestión operativa y contable de tu asociación con nuestra plataforma todo en uno</p>
                         <!-- <img src="assets/images/isologo-sitec.svg" alt="Sitec Software"> -->
                     </article>
                 </section>
-                <section class="pricing-section">
-                    <article class="cards-conntainer">
+                <section class="pricing-section d-flex justify-content-evenly flex-row">
+                    <article class="d-flex justify-content-evenly flex-row">
                         <div class="product-card card">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="card-body body">
+                                <h2 class="card-title"><strong>Básico</strong></h2>
+                                <h3><span class="icono-dolar">$</span> <strong>236</strong>/ Mes</h3>
+                                <p class="card-text"><strong>Total</strong> $2 832/año</p>
+                                <span><a href="" class="boton-producto" type="button">Contratar</a></span>
                             </div>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">An item</li>
-                                <li class="list-group-item">A second item</li>
-                                <li class="list-group-item">A third item</li>
+                                <li class="list-group-item producto-item">Gestión eficiente y segura de abonados, facturación electrónica.</li>
+                                <li class="list-group-item producto-item">Diversidad de tarifas, rutas adaptadas y flexibles.</li>
+                                <li class="list-group-item producto-item">Carga y generación rápida de mediciones, cobros automatizados.</li>
+                                <li class="list-group-item producto-item">Procesos automatizados para pagos mensuales, sin complicaciones.</li>
+                                <li class="list-group-item producto-item">Facilidad en transacciones con BNServicios, sin demoras.</li>
+                                <li class="list-group-item producto-item">Avisos de cobro personalizados vía SMS, correo electrónico.</li>
+                                <li class="list-group-item producto-item">Envío rápido de facturas electrónicas por servicios.</li>
+                                <li class="list-group-item producto-item">Aplicación eficaz de multas, saldos a favor controlados.</li>
+                                <li class="list-group-item producto-item">Detalles contables enviados automáticamente, informes precisos.</li>
                             </ul>
-                            <div class="card-body">
-                                <a href="#" class="card-link">Card link</a>
-                                <a href="#" class="card-link">Another link</a>
-                            </div>
                         </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="product-card card">
+                            <div class="card-body body">
+                                <h2 class="card-title"><strong>Completo</strong></h2>
+                                <h3><span class="icono-dolar">$</span> <strong>415</strong>/ Mes</h3>
+                                <p class="card-text"><strong>Total</strong> $4 980/año</p>
+                                <span><a href="" class="boton-producto" type="button">Contratar</a></span>
                             </div>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">An item</li>
-                                <li class="list-group-item">A second item</li>
-                                <li class="list-group-item">A third item</li>
+                                <li class="list-group-item producto-item">Gestión eficiente y segura de abonados, facturación electrónica.</li>
+                                <li class="list-group-item producto-item">Diversidad de tarifas, rutas adaptadas y flexibles.</li>
+                                <li class="list-group-item producto-item">Carga y generación rápida de mediciones, cobros automatizados.</li>
+                                <li class="list-group-item producto-item">Procesos automatizados para pagos mensuales, sin complicaciones.</li>
+                                <li class="list-group-item producto-item">Facilidad en transacciones con BNServicios, sin demoras.</li>
+                                <li class="list-group-item producto-item">Avisos de cobro personalizados vía SMS, correo electrónico.</li>
+                                <li class="list-group-item producto-item">Envío rápido de facturas electrónicas por servicios.</li>
+                                <li class="list-group-item producto-item">Aplicación eficaz de multas, saldos a favor controlados.</li>
+                                <li class="list-group-item producto-item">Detalles contables enviados automáticamente, informes precisos.</li>
+                                <li class="list-group-item producto-item">Completa gestión de activos, planillas, inventario actualizado.</li>
+                                <li class="list-group-item producto-item">Eficiente carga de XML para cuentas por pagar, control financiero.</li>
                             </ul>
-                            <div class="card-body">
-                                <a href="#" class="card-link">Card link</a>
-                                <a href="#" class="card-link">Another link</a>
+                        </div>
+                        <div class="product-card card">
+                            <div class="card-body body">
+                                <h2 class="card-title"><strong>Contable</strong></h2>
+                                <h3><span class="icono-dolar">$</span> <strong>526</strong>/ Mes</h3>
+                                <p class="card-text"><strong>Total</strong> $6 312/año</p>
+                                <span><a href="" class="boton-producto" type="button">Contratar</a></span>
                             </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item producto-item">Gestión eficiente y segura de abonados, facturación electrónica.</li>
+                                <li class="list-group-item producto-item">Diversidad de tarifas, rutas adaptadas y flexibles.</li>
+                                <li class="list-group-item producto-item">Carga y generación rápida de mediciones, cobros automatizados.</li>
+                                <li class="list-group-item producto-item">Procesos automatizados para pagos mensuales, sin complicaciones.</li>
+                                <li class="list-group-item producto-item">Facilidad en transacciones con BNServicios, sin demoras.</li>
+                                <li class="list-group-item producto-item">Avisos de cobro personalizados vía SMS, correo electrónico.</li>
+                                <li class="list-group-item producto-item">Envío rápido de facturas electrónicas por servicios.</li>
+                                <li class="list-group-item producto-item">Aplicación eficaz de multas, saldos a favor controlados.</li>
+                                <li class="list-group-item producto-item">Detalles contables enviados automáticamente, informes precisos.</li>
+                                <li class="list-group-item producto-item">Completa gestión de activos, planillas, inventario actualizado.</li>
+                                <li class="list-group-item producto-item">Eficiente carga de XML para cuentas por pagar, control financiero.</li>
+                                <li class="list-group-item producto-item">Módulo contable listo para requerimientos financieros ARESEP, cumplimiento asegurado.</li>
+                                <li class="list-group-item producto-item">Simplifica procesos contables con automatización avanzada.</li>
+                                <li class="list-group-item producto-item">Facilidad en presentación de declaraciones, informes precisos asegurados.</li>
+                            </ul>
                         </div>
                     </article>
                 </section>
