@@ -1,6 +1,7 @@
 :root {
     --primary-color: #2e57a6;
-    --secondary-color: white;
+    --primary-color-dark: #17305e;
+    --secondary-color: #ffffff;
 }
 
 * {
@@ -16,58 +17,108 @@ a {
 header {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.377);
 }
+.navbar{
+    padding: 0;
+}
+.sitec-nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.377);
+}
+.sitec-nav-bar > ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    margin: 0 1.5rem;
+}
 .sitec-ico{
-    width: 70px;
+    width: 80px;
+}
+.sitec-nav-bar > h1{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0 0 1rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 .sitec-nav-item {
-    margin: 0 1.5rem;
-    text-decoration: none;
-    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20%;
+    font-size: 1.2rem;
     font-family: 'Poppins', sans-serif;
-    color: var(--primary-color);
-    border: none;
-    padding: 0.5rem 1rem;
     border-radius: 10px;
     background-color: var(--secondary-color);
     transition: all 0.3s;
+    text-align: center;
+    height: 58px;
+    margin: 0 0.5rem;
 }
 
 .sitec-nav-item:hover {
     background-color: var(--primary-color);
-    color: var(--secondary-color);
+    a{
+        color: var(--secondary-color);
+    }
 }
 
-.dropdown-content {
-    margin-top: 1rem;
-    display: none;
-    position: absolute;
-    background-color: var(--secondary-color);
-    min-width: 300px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    border-radius: 0 0 10px 10px;
-}
-
-.dropdown-content a {
+.sitec-nav-item > a{
     color: var(--primary-color);
-    padding: 12px 16px;
+    transition: all 0.2s;
+}
+.sitec-nav-login-btn{
+    margin: 0 1.5rem;
     text-decoration: none;
-    display: block;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     font-family: 'Poppins', sans-serif;
+    color: var(--secondary-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    background-color: var(--primary-color);
     transition: all 0.3s;
 }
-
-.dropdown-content a:hover {
-    background-color: var(--primary-color);
+.sitec-nav-login-btn:hover{
+    background-color: var(--primary-color-dark);
     color: var(--secondary-color);
 }
-
-.dropdown-content > a:last-child:hover {
-    border-radius: 0 0 10px 10px;
+.active{
+    background-color: var(--primary-color);
+    a{
+        color: var(--secondary-color);
+    }
 }
-
+.seccion-bienvenida{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 450px;
+    margin-top: 5rem;
+}
+.descripcion-bienvenida{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 2rem;
+}
+.descripcion-bienvenida > img{
+    width: 300px;
+    margin-left: 2rem;
+}
+.descripcion-bienvenida>p{
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-color);
+    text-align: left;
+    padding: 0 0 0 2rem ;
+}
 .sitec-hero {
     padding-right: 2rem;
     background-image: url(../assets/images/cover.webp);
@@ -76,70 +127,62 @@ header {
     height: 737px;
 }
 
-.sitec-hero img {
+.hero-container > img {
     width: 40%;
     margin: 6rem 0 -6rem 6rem;
 }
-
-.sitec-hero h1 {
+.hero-container > h2 {
     font-size: 3rem;
     font-family: 'Poppins', sans-serif;
     color: var(--primary-color);
-    margin-left: 6rem;
+    margin-left: 6.5rem;
 }
 
-.sitec-servicios-slider {
+.sitec-servicios {
     padding: 0 13%;
     height: 614px;
 }
-
-.sitec-services-title {
-    text-align: center;
-    font-size: 6rem;
-    font-family: 'Poppins', sans-serif;
-    color: black;
-    margin-bottom: 2rem;
+.servicio-carrousel{
+    margin: 5rem 0;
 }
-
-.size {
-    height: 614px;
+.servicio-slide {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    height: 80%;
 }
-
-.asada-button,
-.credit-button {
-    width: 45%;
-    padding: 1rem 2rem;
-    font-size: 2.1rem;
+.servicio-slide > h2 {
+    font-size: 3rem;
     font-family: 'Poppins', sans-serif;
-    font-weight: 700;
     color: var(--secondary-color);
-    border: solid 3px var(--secondary-color);
-    border-radius: 10px;
-    background-color: transparent;
+    margin-bottom: 1rem;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.8);
 }
-
-.asada-button:hover,
-.credit-button:hover {
+.servicio-slide > p {
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.8);
+}
+.servicio-slide > a {
+    width: 35%;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
     color: var(--primary-color);
     background-color: var(--secondary-color);
+    text-decoration: none;
+    transition: all 0.3s;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
 }
-
-.sitec-asada-service-caption-text,
-.sitec-asada-service-caption-header,
-.sitec-infra-secure-service-caption-text,
-.sitec-infra-secure-service-caption-header,
-.sitec-aml-service-caption-header,
-.sitec-aml-service-caption-text,
-.sitec-erp-service-caption-header,
-.sitec-erp-service-caption-text {
-    font-family: 'Poppins', sans-serif;
-    color: white;
+.servicio-slide > a:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
-
-.sitec-carrousel-asada-caption,
-.sitec-carrousel-infra-secure-caption,
-.sitec-carrousel-aml-caption,
-.sitec-carrousel-erp-caption,
-.sitec-carrousel-credit-caption {
-    margin-bottom: 9rem;
+.servicio-slide-next-prev{
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: all 0.3s;
 }
